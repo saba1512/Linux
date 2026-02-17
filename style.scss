@@ -33,9 +33,7 @@ header{
         }
 
         .register{
-            display: flex;
-            align-items: center;
-            gap: 20px;
+            display: none;
 
             button{
                 padding: 10px 15px;
@@ -49,6 +47,19 @@ header{
                 &:hover{
                     background-color: #000000;
                 }
+            }
+        }
+
+        .burger{
+            display: block;
+            cursor: pointer;
+
+            .item{
+                width: 25px;
+                height: 3px;
+                background-color: #333;
+                margin: 5px 0;
+                transition: 0.4s;
             }
         }
 
@@ -262,6 +273,28 @@ footer {
                         }
                     }
                 }
+            }
+            .register{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                button{
+                    padding: 10px 15px;
+                    background-color: #017afc;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    transition: 0.5s ease-in-out;
+
+                    &:hover{
+                        background-color: #000000;
+                    }
+                }
+            }
+            .burger{
+                display: none;
             }
         }
     }
